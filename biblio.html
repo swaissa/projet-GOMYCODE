@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton-framework/1.1.1/skeleton.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>MA BIBLIOTHÈQUE</title>
+</head>
+<body>
+    <nav>
+       <span> <i class="fas fa-book"></i>
+        BIBLIOTHEQUE</span>
+        
+        <div class="add-book noselect">
+            Ajouter un livre
+        </div>
+    </nav>
+    <div class="white_overlay">
+        
+    </div>
+    <div class="add-book-form">
+        <i class="fas fa-book"></i>
+        <div class="form-heading">
+            Remplir les informations du livre
+            <span class="alert-div"></span>
+        </div>
+
+        <form>
+            <input type="text"  placeholder="Book Title" name="book-title" id="book-title">
+            <input type="text" placeholder="Author Name" name="author" id="author">
+            <input type="number" placeholder="Number of Pages" name="pages" id="pages">
+            <input type="text" placeholder="image" name="image" id="image">
+
+            <div id="checkdiv">
+                <input type="checkbox" name="read" id="read-status">
+                <label for="read">Read?</label>
+            </div>
+            <button id="submitBookBtn" type="submit">Ajouter le livre à la BIBLIOTHEQUE</button>
+        </form>
+    </div>
+    <div id="main">
+    </div>
+    <footer class="footer">2022 Souaissa Mokhtar</footer>
+   
+    <script src="index.js"></script>
+    
+</body>
+</html>

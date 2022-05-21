@@ -1,0 +1,217 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+/*background: url("/images/girl-3038974_960_720.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;*/
+background: radial-gradient(#f69d3c, #3f87a6);}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    width: 100%;
+    padding: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(31, 43, 201);
+    color: rgb(252, 247, 247);
+    font-family: 'Roboto', sans-serif;
+    
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    filter: drop-shadow(0px 10px 4px rgba(61, 61, 61, 0.301));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 25px;
+}
+nav span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2c2c2c;
+}
+nav span i{
+font-size: 24px !important;
+color: #2c2c2c !important;
+
+}
+nav ul {
+    display: flex;
+    justify-content:right;
+   margin-top: 25px;
+   margin-left: 100px;
+}
+
+.add-book{
+    float: right;
+    background-color: rgb(233, 148, 79);
+    font-weight: bold;
+    padding:5px 15px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: background-color .1s ease;
+}
+
+.add-book:hover{
+    background-color: rgb(255, 165, 92);
+}
+
+.add-book:hover{
+    cursor: pointer;
+}
+
+.add-book-form{
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 2em;
+    width: 500px;
+    top: 20%;
+    left: 40%;
+    margin-left: -25%;
+    border: 1px solid black;
+    border-radius: 15px;
+    z-index: 1002;
+    
+}
+
+.fa-book {
+    color: #fff;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.add-book-form .fa-book{
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 100px;
+    display: block;
+}
+
+.add-book-form > * {
+    
+    color: rgb(255, 196, 0);
+}
+
+#checkdiv > * { 
+    display: inline;
+}
+
+.form-heading {
+    color: black;
+}
+
+.alert-div {
+    color: rgb(68, 0, 255);
+    height: 10px;
+    width: auto;
+}
+
+.white_overlay {
+    display: block;
+    position: fixed;
+    overflow: hidden;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 1001;
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+
+#main {
+    display: grid;
+    padding-top: 1.2em;
+    height: 100%;
+    padding-top: 10vh;
+    place-items: start;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    z-index: 1;
+    width: min(1100px,90%);
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 12px;
+    text-align: center;
+}
+.book {
+    /* background-color: rgb(255, 212, 187); */
+   background-color: white;
+   border: 1px solid rgb(211, 211, 211);
+   width: 300px;
+   height: 500px;
+
+}
+
+.book img{
+    width: 100%;
+    height:150px ;
+
+}
+
+
+.cover {
+    /* background-color: rgb(236, 135, 40); */
+background-color: white;
+border-radius: 8;
+padding: 8px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 1.6em;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font: small-caps bold 16px/2 sans-serif;
+    color: rgb(255, 255, 255);
+   
+}
+
+.remove {
+    background-color: red;
+    color: #fff;
+}
+
+.remove:hover {
+    background-color: #ffb89d;
+    color:rgb(255, 255, 255);
+}
+
+.change-status {
+    color: #fff;
+    background-color: #464646;
+}
+
+.change-status:hover {
+    color: #fff;
+    background-color: #919191;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
